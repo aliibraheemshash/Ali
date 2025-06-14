@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ali Shash | Page In Progress</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        background: linear-gradient(to bottom right, #f0f0f0, #e0e0ff);
+        overflow-x: hidden;
+      }
+      .articles {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .articles h2 {
+        text-align: center;
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 40px;
+      }
+
+      .article-list {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+
+      .article-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+      }
+
+      .article-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .article-card h3 {
+        color: #444;
+        margin-bottom: 10px;
+      }
+
+      .article-card p {
+        color: #666;
+        font-size: 0.95em;
+        margin-bottom: 10px;
+      }
+
+      .article-card a {
+        color: #3366cc;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .article-card a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        width: 100vw;
+        background-color: #222;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      nav {
+        width: 100vw;
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 15px 10px;
+      }
+
+      nav a {
+        color: #f0f0f0;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #ffcc00;
+      }
+
+      .under-construction {
+        padding: 60px 20px;
+        text-align: center;
+        max-width: 700px;
+        margin: auto;
+      }
+
+      .under-construction h2 {
+        font-size: 2em;
+        color: #e67e22;
+        margin-bottom: 20px;
+      }
+
+      .under-construction p {
+        font-size: 1.2em;
+        color: #444;
+      }
+
+      .emoji {
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Ali Shash</h1>
+      <p>
+        Dhanbad, Jharkhand, India | +91-787-067-7731 |
+        <a href="mailto:eng.ali.shash.in@gmail.com" style="color: #f0f0f0"
+          >eng.ali.shash.in@gmail.com</a
+        >
+      </p>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+
+      <a href="skills.html">Skills</a>
+      <a href="cv.html">CV</a>
+      <a href="hobbies.html">Hobbies</a>
+    </nav>
+
+    <section class="articles" id="ai">
+      <h2>AI Articles</h2>
+      <div class="article-list">
+        <article class="article-card">
+          <h3>Foundational Models in AI Development</h3>
+          <p>
+            Introduces core AI architectures that underpin modern applications
+            like NLP and computer vision.
+          </p>
+          <a href="research.html">Read more</a>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            Large Language Models: Architecture, Training, and Applications in
+            Modern AI
+          </h3>
+          <p>
+            Explores how LLMs like GPT are trained, structured, and deployed in
+            real-world systems.
+          </p>
+          <a href="research.html">Read more</a>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            Convolutional Neural Networks: Architecture, Operations, and
+            Practical Considerations
+          </h3>
+          <p>
+            A visual walkthrough of CNNs, their layers, pooling, and relevance
+            to image processing tasks.
+          </p>
+          <a href="research.html">Read more</a>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            Dimensionality Reduction and Generative Models in Machine Learning
+          </h3>
+          <p>
+            Discusses PCA, t-SNE, and how GANs and VAEs generate realistic data
+            from latent representations.
+          </p>
+          <a href="research.html">Read more</a>
+        </article>
+      </div>
+    </section>
+    <section class="articles">
+      <h2>Blockchain Articles</h2>
+      <div class="article-list">
+        <article class="article-card">
+          <h3>
+            Understanding Voting, Sybil Attacks, and Consensus in Blockchain
+          </h3>
+          <p>
+            An overview of how decentralized systems reach agreement, and how
+            they defend against identity-based attacks.
+          </p>
+          <a href="research.html">Read more</a>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            Bitcoin Block Headers, Propagation Delay, Difficulty Adjustment, and
+            Fork Choice
+          </h3>
+          <p>
+            A technical dive into how Bitcoin nodes communicate and adapt to
+            changes, while maintaining chain consistency.
+          </p>
+          <a href="research.html">Read more</a>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            Bitcoin Internals: Data Structures, Signatures, Fees, and Mining
+          </h3>
+          <p>
+            This article explores how Bitcoin manages transactions, incentives,
+            and mining operations under the hood.
+          </p>
+          <a href="research.html">Read more</a>
+        </article>
+      </div>
+    </section>
+  </body>
+<footer style="text-align: center; font-size: 14px; padding: 10px;">
+  &copy; <span id="year"></span> Ali Shash. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</html>
